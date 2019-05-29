@@ -157,6 +157,13 @@ else
 endif
 export BUILD_HAS_NOTIFICATION
 
+ifeq ($(BS_FIRMWARE_HAS_OPENAMP),yes)
+    BUILD_HAS_OPENAMP := yes
+else
+    BUILD_HAS_OPENAMP := no
+endif
+export BUILD_HAS_OPENAMP
+
 # Add directories to the list of targets to build
 LIB_TARGETS_y += $(patsubst %,$(MODULES_DIR)/%/src, \
                             $(BUILD_STANDARD_MODULES))

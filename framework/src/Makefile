@@ -14,6 +14,10 @@ BS_LIB_SOURCES += fwk_interrupt.c
 BS_LIB_SOURCES += fwk_mm.c
 BS_LIB_SOURCES += fwk_module.c
 BS_LIB_SOURCES += fwk_slist.c
+ifeq ($(BUILD_HAS_OPENAMP),yes)
+    BS_LIB_SOURCES += openamp/rpmsg.c
+    BS_LIB_SOURCES += openamp/rpmsg_client.c
+endif
 ifeq ($(BUILD_HAS_MULTITHREADING),yes)
     BS_LIB_SOURCES += fwk_multi_thread.c
 else
