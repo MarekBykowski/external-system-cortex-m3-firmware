@@ -26,4 +26,6 @@ endif
 BS_LIB_INCLUDES += $(ARCH_DIR)/include
 BS_LIB_INCLUDES += $(FWK_DIR)/include
 
+BS_LIB_INCLUDES += $(FWK_DIR)/../module/log/include
+BS_LIB_INCLUDES += $(FWK_DIR)/../product/corstone-700/include/
 include $(BS_DIR)/lib.mk
