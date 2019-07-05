@@ -11,9 +11,11 @@ BS_FIRMWARE_HAS_OPENAMP := yes
 
 BS_FIRMWARE_MODULES := \
     pl011 \
-    log
+    log \
+    mhuv2
 
 BS_FIRMWARE_SOURCES := \
-    config_log.c 
+    config_log.c \
+    config_mhuv2.c
 
 include $(BS_DIR)/firmware.mk
