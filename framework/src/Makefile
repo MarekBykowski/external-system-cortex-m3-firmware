@@ -29,5 +29,6 @@ BS_LIB_INCLUDES += $(FWK_DIR)/include
 BS_LIB_INCLUDES += $(FWK_DIR)/../module/mhuv2/include
 BS_LIB_INCLUDES += $(FWK_DIR)/../module/log/include
 BS_LIB_INCLUDES += $(FWK_DIR)/../product/corstone-700/include/
+BS_LIB_INCLUDES += $(FWK_DIR)/../product/corstone-700/module/eventhandler/include/
 
 include $(BS_DIR)/lib.mk
