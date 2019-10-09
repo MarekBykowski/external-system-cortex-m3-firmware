@@ -25,7 +25,7 @@ static const struct fwk_element pl011_element_desc_table[] = {
         .data = &((struct mod_pl011_device_config) {
             .reg_base = ES_PL011_UART_BASE,
             .baud_rate_bps = 115200,
-            .clock_rate_hz = SYSTEM_CLOCK,
+            .clock_rate_hz = 32 * UART_CLK_MHZ,
             .clock_id = FWK_ID_NONE_INIT,
             }),
     },

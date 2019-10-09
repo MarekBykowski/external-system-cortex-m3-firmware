@@ -27,6 +27,8 @@
  * @{
  */
 
+#define UART_CLK_MHZ (1000UL * 1000UL)
+
 /*!
  * \brief PL011 device configuration data.
  */
