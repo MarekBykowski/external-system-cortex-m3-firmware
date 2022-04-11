@@ -29,6 +29,7 @@ struct rpmsg_ctx {
 };
 static struct rpmsg_ctx rpmsg_ctx;
 
+static struct rpmsg_device *rpmesg_device;
 
 struct rpmsg_endpoint* get_endpoint(uint32_t address)
 {

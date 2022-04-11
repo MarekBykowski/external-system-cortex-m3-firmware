@@ -8,7 +8,6 @@
 #ifndef _RPMSG_CLIENT_H_
 #define _RPMSG_CLIENT_H_
 
-struct rpmsg_device *rpmesg_device;
 extern struct rpmsg_endpoint* endpoint_create(struct rpmsg_device *rdev, void *priv);
 extern struct rpmsg_device* init_rpmsg();
 struct rpmsg_endpoint* get_endpoint(uint32_t address);
