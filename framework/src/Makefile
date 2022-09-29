@@ -32,7 +32,12 @@ BS_LIB_INCLUDES += $(FWK_DIR)/include
 
 BS_LIB_INCLUDES += $(FWK_DIR)/../module/mhuv2/include
 BS_LIB_INCLUDES += $(FWK_DIR)/../module/log/include
-BS_LIB_INCLUDES += $(FWK_DIR)/../product/corstone-700/include/
-BS_LIB_INCLUDES += $(FWK_DIR)/../product/corstone-700/module/eventhandler/include/
+ifeq ($(PRODUCT), corstone-700)
+    BS_LIB_INCLUDES += $(FWK_DIR)/../product/corstone-700/include/
+    BS_LIB_INCLUDES += $(FWK_DIR)/../product/corstone-700/module/eventhandler/include/
+else ifeq ($(PRODUCT), corstone-1000)
+    BS_LIB_INCLUDES += $(FWK_DIR)/../product/corstone-1000/include/
+    BS_LIB_INCLUDES += $(FWK_DIR)/../product/corstone-1000/module/eventhandler/include/
+endif
 
 include $(BS_DIR)/lib.mk
