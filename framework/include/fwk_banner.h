@@ -14,6 +14,7 @@
                         "|=== \\___\r\n"\
                         "|___ |___/\r\n"\
                         "External System Cortex-M3 Processor\n\r"\
-                        "Hello Oren. Running RTX RTOS\n\r"
+                        "Hello World\n\r"\
+			"Running RTX RTOS\n\r"
  
 #endif /* FWK_BANNER_H */
